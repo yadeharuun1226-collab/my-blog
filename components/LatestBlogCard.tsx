@@ -7,9 +7,10 @@ type QiitaItem = {
   created_at: string;
 };
 
-async function getLatestQiitaPosts(): Promise<QiitaItem[]> {
-  const QIITA_USER_ID = "yadeharuun1226-collab"; // ★ご自身のQiitaユーザー名
+// ★ 定数をファイルスコープ（外側）に配置する
+const QIITA_USER_ID = "yadeharuun1226-collab";
 
+async function getLatestQiitaPosts(): Promise<QiitaItem[]> {
   try {
     const res = await fetch(
       `https://qiita.com/api/v2/users/${QIITA_USER_ID}/items?page=1&per_page=6`,
@@ -27,7 +28,8 @@ export default async function LatestBlogCard() {
   const posts = await getLatestQiitaPosts();
 
   return (
-    <Card title="Latest Blog" href="https://qiita.com/YOUR_QIITA_NAME">
+    /* ★ ダブルクォーテーション（""）からバッククォート（``）に変更 */
+    <Card title="Latest Blog" href={`https://qiita.com/${QIITA_USER_ID}`}>
       <div className="space-y-2.5">
         {posts.length > 0 ? (
           posts.map((post) => {
