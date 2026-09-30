@@ -120,6 +120,13 @@ export default function SkillsPage() {
           experience: "実務 / 個人開発",
           description: "Bash / Zsh での各種タスク自動化スクリプト作成、サーバー環境構築およびログ解析。",
         },
+        {
+          name: "Certification List",
+          level: "Advanced",
+          experience: "クラウド / IPA",
+          description: "AWS 9資格(AIF,CLF,SAA,DVA,COA,SAP,DOP,SCS,DEA)、GCP 2資格(GCL,ACE)、Azure 2資格(AZ-900,AZ-104)、OCI Foundations Associate、応用情報技術者",
+        },
+
       ],
     },
   ];
