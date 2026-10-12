@@ -63,7 +63,7 @@ export default function ProjectsPage() {
         "Tailwind CSS によるデザイン統一とレスポンシブ対応",
       ],
       techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel", "Qiita API"],
-      githubUrl: "https://github.com",
+      githubUrl: "https://github.com/yadeharuun1226-collab/my-blog",
     },
     {
       id: "be-curious",
@@ -104,8 +104,8 @@ export default function ProjectsPage() {
         "Amazon S3",
         "Vercel",
       ],
-      githubUrl: "https://github.com/your-account/tokii", // ご自身のGitHubリポジトリURLに変更
-      demoUrl: "https://tokii-app.vercel.app", // デモURL（あれば）
+      githubUrl: "https://github.com/yadeharuun1226-collab/tokii", // ご自身のGitHubリポジトリURLに変更
+      demoUrl: "https://tokii-ten.vercel.app/", // デモURL（あれば）
     },
   ];
 
