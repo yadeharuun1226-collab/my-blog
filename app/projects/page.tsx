@@ -81,18 +81,31 @@ export default function ProjectsPage() {
       techStack: ["Next.js", "TypeScript", "Tailwind CSS"],
     },
     {
-      id: "coming-soon",
-      title: "Coming Soon",
-      subtitle: "新規プロジェクト企画・検証中",
-      period: "2026.04 - 準備中",
-      img: "/images/profile_Mt.Fuji.jpg",
+      id: "tokii",
+      title: "tokii — ミニマル写真日記アプリ",
+      subtitle: "記憶を刻み、過去の時を手繰り寄せるサーバーレスアプリ",
+      period: "2026.10 - 運用中",
+      img: "/images/profile_Mt.Fuji.jpg", // お好みの画像パスに変更してください
       description:
-        "新たな技術スタックの検証および開発者向けツールの構築に向けた新規プロジェクトです。コンセプト設計および環境構築を進めています。",
+        "「日々の束の間の記憶を、美しく静かに残す」をコンセプトに、UIデザインからサーバーレスバックエンドまでフルスクラッチで開発したパーソナルアーカイブアプリです。",
       architecturePoints: [
-        "新規クラウドアソシエイト技術の検証",
-        "自動化および開発効率向上ツールの開発",
+        "AWS CDK を用いたインフラのコード化（IaC）とサーバーレス構成（Lambda / DynamoDB / API Gateway）",
+        "Amazon S3 の Pre-signed URL 連携による、安全かつスムーズなセキュア画像アップロード機能",
+        "初期ロード時の負荷を軽減する遅延ロード式アコーディオンタイムラインと、タグ連動型ランダム振り返り（Flashback）機能",
+        "外部の重いUIライブラリに依存せず、インラインSVGとTailwind CSSで構築した洗練されたミニマルな独自UI",
       ],
-      techStack: ["AWS", "Docker", "Go"],
+      techStack: [
+        "Next.js (App Router)",
+        "TypeScript",
+        "Tailwind CSS",
+        "AWS CDK",
+        "AWS Lambda",
+        "Amazon DynamoDB",
+        "Amazon S3",
+        "Vercel",
+      ],
+      githubUrl: "https://github.com/your-account/tokii", // ご自身のGitHubリポジトリURLに変更
+      demoUrl: "https://tokii-app.vercel.app", // デモURL（あれば）
     },
   ];
 
