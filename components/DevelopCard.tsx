@@ -89,17 +89,15 @@ export default function DevelopCard() {
     {
       id: "tokii",
       name: "tokii — ミニマル写真日記アプリ",
-      tech: "Next.js / TypeScript / AWS CDK / Lambda / DynamoDB / S3",
+      tech: "Next.js / TypeScript / AWS CDK / Lambda",
       img: "/images/profile_Mt.Fuji.jpg",
       plannedManDays: 14,
       spentManDays: 14,
-      status: "Released",
+      status: "Completed", // ← ここを "Completed" (または "In Progress") に変更
       description: "「日々の束の間の記憶を、美しく静かに残す」をコンセプトに、UIデザインからサーバーレスバックエンドまでフルスクラッチで開発したパーソナルアーカイブアプリです。",
       features: [
-        "AWS CDK を用いたインフラのコード化（IaC）とサーバーレス構成（Lambda / DynamoDB / API Gateway）",
-        "Amazon S3 の Pre-signed URL 連携によるセキュアな画像アップロード",
-        "初期ロードの負荷を軽減する遅延ロード式アコーディオンタイムラインと、タグ連動型ランダム振り返り（Flashback）機能",
-        "インラインSVGとTailwind CSSによる、外部ライブラリに依存しない洗練されたミニマルUIの構築",
+        "AWS CDK を用いたインフラのコード化（IaC）とサーバーレス構成",
+        "Amazon S3 Pre-signed URL を用いたセキュアな画像アップロード",
       ],
     },
   ];
